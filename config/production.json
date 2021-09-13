@@ -1,5 +1,5 @@
 {
-    "name":"My Express App - Production",
+    "name":"My Pandemiceo App - Production",
     "mail":{
         "host":"production-mail-server"
     }

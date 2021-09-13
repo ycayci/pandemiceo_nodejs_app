@@ -1,7 +1,8 @@
 {
-    "name": "My Express App",
+    "name": "My Pandemiceo App",
     "mail": {
         "host": "mail-server"
     },
-    "jwtPrivateKey": ""
+    "jwtPrivateKey": "",
+    "db":"mongodb://localhost/pandemiceo"
 }
