@@ -12,10 +12,9 @@ router.get('/', async (req, res, next) => {
 });
 
 router.get('/countries', async (req, res, next) => {
-    const retrievedCountries = await HighScore.find().select('country -_id');
-    let countries = [];
-    retrievedCountries.map(key => countries.push(key.country));
-    res.send(countries);
+    const retrievedCountries = await HighScore
+        .distinct('country', {})
+    res.send(retrievedCountries);
 });
 
 router.get('/:country', async (req, res) => {
